@@ -1,0 +1,31 @@
+<h1>MyApp</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+
+<% @post.each do |p| %>
+	
+	<%= p.title %>
+
+<% end %>
+
+
+<% if  user_signed_in? %>
+
+<img src="<%= current_user.portrait(:thumb) %>">
+<br>
+
+	<%= current_user.inspect %>
+
+<% else %>
+b
+<% end %>
+
+
+
+
+
+
+
+
+
+

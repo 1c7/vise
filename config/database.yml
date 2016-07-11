@@ -1,0 +1,28 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: vise
+  pool: 5
+  username: dbuser
+  password: haha
+  host: localhost
+
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: vise
+  pool: 5
+  username: dbuser
+  password: haha
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: vise
+  pool: 5
+  username: dbuser
+  password: haha
+
+cucumber:
+  <<: *TEST
